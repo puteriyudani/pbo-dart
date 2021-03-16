@@ -55,19 +55,33 @@
 // }
 
 // contain list
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   List<int> myList = [1, 2, 3, 4, 5, 6, 7];
+//   List<int> list = [1, 2, 3];
+
+//   myList.removeWhere((number) => number % 2 != 0);
+
+//   if (myList.contains(6)) {
+//     print("betul!");
+//   }
+
+//   myList.forEach((bilangan) {
+//     print(bilangan);
+//   });
+// }
+
+// sub list
 import 'dart:io';
 
 main(List<String> arguments) {
   List<int> myList = [1, 2, 3, 4, 5, 6, 7];
   List<int> list = [1, 2, 3];
 
-  myList.removeWhere((number) => number % 2 != 0);
+  list = myList.sublist(3, 6);
 
-  if (myList.contains(6)) {
-    print("betul!");
-  }
-
-  myList.forEach((bilangan) {
+  list.forEach((bilangan) {
     print(bilangan);
   });
 }
