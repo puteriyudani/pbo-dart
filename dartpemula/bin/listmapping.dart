@@ -101,13 +101,33 @@
 // }
 
 // sort list
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   List<int> myList = [4, 6, 1, 3, 5, 2, 7];
+//   List<int> list = [1, 2, 3];
+//   // a = 4, b = 5
+//   myList.sort((a, b) => b - a);
+
+//   myList.forEach((bilangan) {
+//     print(bilangan);
+//   });
+// }
+
+// every list
 import 'dart:io';
 
 main(List<String> arguments) {
   List<int> myList = [4, 6, 1, 3, 5, 2, 7];
   List<int> list = [1, 2, 3];
-  // a = 4, b = 5
-  myList.sort((a, b) => b - a);
+
+  myList.removeWhere((n) => n % 2 == 0);
+
+  if (myList.every((number) => number % 2 != 0)) {
+    print("semua ganjil");
+  } else {
+    print("tidak semua ganjil");
+  }
 
   myList.forEach((bilangan) {
     print(bilangan);
