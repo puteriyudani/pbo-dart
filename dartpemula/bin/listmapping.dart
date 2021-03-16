@@ -115,18 +115,40 @@
 // }
 
 // every list
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   List<int> myList = [4, 6, 1, 3, 5, 2, 7];
+//   List<int> list = [1, 2, 3];
+
+//   myList.removeWhere((n) => n % 2 == 0);
+
+//   if (myList.every((number) => number % 2 != 0)) {
+//     print("semua ganjil");
+//   } else {
+//     print("tidak semua ganjil");
+//   }
+
+//   myList.forEach((bilangan) {
+//     print(bilangan);
+//   });
+// }
+
+// mengecek apakah list kosong atau tidak
 import 'dart:io';
 
 main(List<String> arguments) {
-  List<int> myList = [4, 6, 1, 3, 5, 2, 7];
+  List<int> myList = [1, 2, 3, 4, 5, 6, 7];
   List<int> list = [1, 2, 3];
 
   myList.removeWhere((n) => n % 2 == 0);
 
-  if (myList.every((number) => number % 2 != 0)) {
-    print("semua ganjil");
-  } else {
-    print("tidak semua ganjil");
+  if (myList.isEmpty) {
+    print("kosong");
+  }
+
+  if (myList.isNotEmpty) {
+    print("tidak kosong");
   }
 
   myList.forEach((bilangan) {
