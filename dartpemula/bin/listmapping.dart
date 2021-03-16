@@ -21,13 +21,25 @@
 // }
 
 // perulangan list (for in)
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   List<int> myList = [];
+//   List<int> list = [1, 2, 3];
+
+//   for (int bilangan in list) {
+//     print(bilangan);
+//   }
+// }
+
+// perulangan list (for each)
 import 'dart:io';
 
 main(List<String> arguments) {
   List<int> myList = [];
   List<int> list = [1, 2, 3];
 
-  for (int bilangan in list) {
+  list.forEach((bilangan) {
     print(bilangan);
-  }
+  });
 }
