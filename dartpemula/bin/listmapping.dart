@@ -73,13 +73,27 @@
 // }
 
 // sub list
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   List<int> myList = [1, 2, 3, 4, 5, 6, 7];
+//   List<int> list = [1, 2, 3];
+
+//   list = myList.sublist(3, 6);
+
+//   list.forEach((bilangan) {
+//     print(bilangan);
+//   });
+// }
+
+// clear list
 import 'dart:io';
 
 main(List<String> arguments) {
   List<int> myList = [1, 2, 3, 4, 5, 6, 7];
   List<int> list = [1, 2, 3];
 
-  list = myList.sublist(3, 6);
+  list.clear();
 
   list.forEach((bilangan) {
     print(bilangan);
