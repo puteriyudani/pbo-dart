@@ -87,15 +87,29 @@
 // }
 
 // clear list
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   List<int> myList = [1, 2, 3, 4, 5, 6, 7];
+//   List<int> list = [1, 2, 3];
+
+//   list.clear();
+
+//   list.forEach((bilangan) {
+//     print(bilangan);
+//   });
+// }
+
+// sort list
 import 'dart:io';
 
 main(List<String> arguments) {
-  List<int> myList = [1, 2, 3, 4, 5, 6, 7];
+  List<int> myList = [4, 6, 1, 3, 5, 2, 7];
   List<int> list = [1, 2, 3];
+  // a = 4, b = 5
+  myList.sort((a, b) => b - a);
 
-  list.clear();
-
-  list.forEach((bilangan) {
+  myList.forEach((bilangan) {
     print(bilangan);
   });
 }
