@@ -155,16 +155,34 @@
 // }
 
 // mengubah list menjadi set
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   List<int> myList = [1, 1, 6, 4, 5, 6, 2];
+//   List<int> list = [1, 2, 3];
+
+//   Set<int> s;
+//   s = myList.toSet();
+
+//   s.forEach((bilangan) {
+//     print(bilangan);
+//   });
+// }
+
+// mapping
 import 'dart:io';
 
 main(List<String> arguments) {
   List<int> myList = [1, 1, 6, 4, 5, 6, 2];
-  List<int> list = [1, 2, 3];
+  List<String> list = [];
 
-  Set<int> s;
-  s = myList.toSet();
+  // myList.forEach((bilangan) {
+  //   list.add("angka " + bilangan.toString());
+  // });
 
-  s.forEach((bilangan) {
-    print(bilangan);
+  list = myList.map((number) => "angka " + number.toString()).toList();
+
+  list.forEach((str) {
+    print(str);
   });
 }
