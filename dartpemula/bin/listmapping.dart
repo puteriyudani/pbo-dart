@@ -141,8 +141,6 @@ main(List<String> arguments) {
   List<int> myList = [1, 2, 3, 4, 5, 6, 7];
   List<int> list = [1, 2, 3];
 
-  myList.removeWhere((n) => n % 2 == 0);
-
   if (myList.isEmpty) {
     print("kosong");
   }
