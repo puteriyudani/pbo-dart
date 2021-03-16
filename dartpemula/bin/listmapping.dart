@@ -135,21 +135,36 @@
 // }
 
 // mengecek apakah list kosong atau tidak
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   List<int> myList = [1, 2, 3, 4, 5, 6, 7];
+//   List<int> list = [1, 2, 3];
+
+//   if (myList.isEmpty) {
+//     print("kosong");
+//   }
+
+//   if (myList.isNotEmpty) {
+//     print("tidak kosong");
+//   }
+
+//   myList.forEach((bilangan) {
+//     print(bilangan);
+//   });
+// }
+
+// mengubah list menjadi set
 import 'dart:io';
 
 main(List<String> arguments) {
-  List<int> myList = [1, 2, 3, 4, 5, 6, 7];
+  List<int> myList = [1, 1, 6, 4, 5, 6, 2];
   List<int> list = [1, 2, 3];
 
-  if (myList.isEmpty) {
-    print("kosong");
-  }
+  Set<int> s;
+  s = myList.toSet();
 
-  if (myList.isNotEmpty) {
-    print("tidak kosong");
-  }
-
-  myList.forEach((bilangan) {
+  s.forEach((bilangan) {
     print(bilangan);
   });
 }
