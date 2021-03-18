@@ -1,8 +1,7 @@
-class Hero {
-  int _healthPoint;
+import 'package:dartpemula/character.dart';
 
-  int get healthPoint => _healthPoint;
-  set healthPoint(int value) => _healthPoint = value;
+import 'package:dartpemula/character.dart';
 
+class Hero extends Character {
   String killAMonster() => "Take this!!";
 }

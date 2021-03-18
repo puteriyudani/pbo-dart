@@ -1,8 +1,7 @@
-class Monster {
-  int _healthPoint;
+import 'package:dartpemula/character.dart';
 
-  int get healthPoint => _healthPoint;
-  set healthPoint(int value) => _healthPoint = value;
+import 'package:dartpemula/character.dart';
 
+class Monster extends Character {
   String eatHuman() => "Grr.. Delicious.. Yummy..";
 }
