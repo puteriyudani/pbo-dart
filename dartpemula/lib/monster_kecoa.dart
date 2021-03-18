@@ -3,4 +3,9 @@ import 'package:dartpemula/monster.dart';
 
 class MonsterKecoa extends Monster {
   String fly() => "Syuuung...";
+
+  @override
+  String move() {
+    return "jalan-jalan santai";
+  }
 }
